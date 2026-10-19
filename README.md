@@ -17,3 +17,11 @@ A simple CRUD API for managing tasks built with FastAPI.
 | Delete | DELETE | `/tasks/{task_id}` | Remove a task |
 
 ## Curl Test Output
+bash
+curl -i http://localhost:8000/tasks
+HTTP/1.1 200 OK
+server: uvicorn
+content-length: 154
+content-type: application/json
+
+[{"title":"Buy milk","done":false,"id":1},{"title":"Finish FlyRank assignment","done":false,"id":2},{"title":"Read a book","done":true,"id":3}]
